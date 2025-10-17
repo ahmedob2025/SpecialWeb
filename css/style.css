@@ -12,7 +12,7 @@
   --bg-800: #0b1220; /* أسطح داكنة */
   --surface: #111827; /* navbar, panels */
   --text-primary: #f8fafc; /* نص رئيسي */
-  --text-muted: #040405; /* وصف/نص ثانوي*/
+  --text-muted: #9ca3af; /* وصف/نص ثانوي*/
 
   --gold-500: #facc15; /* ذهبي أساسي - CTA */
   --gold-600: #d4af37; /* ذهبي للـ hover */
@@ -1899,5 +1899,6 @@ option {
     border-radius:12px;
   }
 }
+
 
 /* لو تحب تخلي الزر على اليمين (لـ LTR) غيّر left->right */
