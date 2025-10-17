@@ -1902,34 +1902,6 @@ option {
 }
 
 /* لو تحب تخلي الزر على اليمين (لـ LTR) غيّر left->right */
-/* إصلاح تمدد الفوتر وسبب الصفحات الثلاث */
-footer, 
-.footer, 
-.footer-compact, 
-.footer-grid, 
-.footer-bottom, 
-.container.footer-grid, 
-.container.footer-bottom {
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow-x: hidden !important;
-  display: flex;
-  flex-wrap: wrap; /* يسمح بلف العناصر بدل تمديد الصفحة */
-  box-sizing: border-box;
-  justify-content: center;
-}
 
-/* العناصر الداخلية ضمن الفوتر (أعمدة أو روابط) */
-footer * {
-  max-width: 100%;
-  flex: 1 1 100%;
-  box-sizing: border-box;
-}
 
-/* الصور داخل الفوتر */
-footer img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 
