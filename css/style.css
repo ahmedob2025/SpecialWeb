@@ -62,6 +62,7 @@
 html,
 body {
   height: 100%;
+   overflow-x: hidden;
 }
 
 body {
@@ -1901,3 +1902,4 @@ option {
 }
 
 /* لو تحب تخلي الزر على اليمين (لـ LTR) غيّر left->right */
+
