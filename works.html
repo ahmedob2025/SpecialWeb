@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ترميز الصفحة (UTF-8) لعرض العربية بشكل صحيح -->
+  <meta charset="utf-8">
+
+  <!-- توافق مع IE ومرجع عام -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  <!-- واجهة متجاوبة: ضروري للـmobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- عنوان الصفحة (غيّره إن رغبت) -->
+<title>أعمالنا — معرض مشاريع SpecialWeb</title>  
+<!-- وصف موجز احترافي يظهر في نتائج البحث -->
+<meta name="description" content="اعرض أمثلة حقيقية من مشاريع SpecialWeb: مواقع منصة، حملات إعلانية مموّلة، وإنتاج فيديوهات عرض مشاريع — شاهد التفاصيل وروابط التشغيل الحيّة لكل مشروع.">
+  <!-- كلمات مفتاحية مرجعية (اختياري) -->
+  <meta name="keywords" content="معرض الأعمال, مشاريع ويب, فيديو مشاريع, نماذج مواقع, أعمال SpecialWeb">
+  <!-- تعليمات لعناكب البحث -->
+  <meta name="robots" content="index, follow">
+
+  <!-- canonical: استبدل بعنوان موقعك النهائي بعد النشر -->
+  <link rel="canonical" href="REPLACE_CANONICAL_URL_HERE">
+
+  <!-- theme color للشريط العلوي على الهواتف -->
+  <meta name="theme-color" content="#0F172A">
+
+  <!-- مؤلف/شركة -->
+  <meta name="author" content="SpecialWeb _ Ahmed Obaidat">
+
+  <!-- ======== FAVICONS محلياً ======== -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="assets/manifest.json">
+
+  <!-- ======== تحميل الخطوط (يمكن استضافتها محلياً لاحقاً) ======== -->
+  <!-- preconnect لتسريع تحميل الخطوط الخارجية -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ======== CSS الرئيسي (محلي) مع preload لتقليل FOUC/LCP ======== -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- ======== صورة الهيرو/OG محلياً (نستخدم مسار محلي الآن) ======== -->
+  <!-- ملاحظة: بعد النشر إلى GitHub Pages من الأفضل استبدال og:image برابط مطلق كامل -->
+  <link rel="preload" href="assets/images/og-image-1200x630.webp" as="image">
+  <meta property="og:image" content="assets/images/og-image-1200x630.webp">
+  <meta property="og:image:alt" content="SpecialWeb — تصميم وتطوير مواقع">
+
+  <!-- ======== Open Graph (مشاركـة اجتماعية) ======== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SpecialWeb">
+  <meta property="og:title" content="SpecialWeb — تصميم وتطوير مواقع وتسويق إلكتروني احترافي">
+  <meta property="og:description" content="SpecialWeb نصمّم مواقع متجاوبة ونقدّم حلول تسويق وإنتاج فيديو لمساعدتك على النمو الرقمي.">
+  <!-- لاحظ: بعد النشر، استبدل og:url برابط صفحتك الكاملة -->
+  <meta property="og:url" content="REPLACE_CANONICAL_URL_HERE">
+
+  <!-- ======== Twitter Card ======== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SpecialWeb — تصميم وتطوير مواقع">
+  <meta name="twitter:description" content="نحو حضور رقمي فعّال — خدمات تصميم مواقع وتسويق وإنتاج فيديو.">
+  <meta name="twitter:image" content="assets/images/og-image-1200x630.webp">
+
+  <!-- ======== Structured Data (JSON-LD) — منظمة بشكل أساسي للشركة ======== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SpecialWeb",
+    "url": "REPLACE_DOMAIN_HERE",
+    "logo": "REPLACE_DOMAIN_HERE/assets/images/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61577997461904",
+      "https://www.instagram.com/specialweb8/"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+963992812546",
+        "contactType": "customer service",
+        "areaServed": "SY",
+        "availableLanguage": ["Arabic","English"]
+      }
+    ],
+    "description": "SpecialWeb شركة تقدم تصميم وتطوير مواقع، تسويق إلكتروني، وإنتاج فيديو."
+  }
+  </script>
+
+  <!-- ======== تحسين الأداء إضافي: prefetch لنطاقات خارجية محتملة ======== -->
+  <link rel="dns-prefetch" href="//ajax.googleapis.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+</head>
+  <body>
+       <header class="header">
+      <div
+        class="container"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        "
+      >
+            <div class="logo">
+          <img width="200px" src="images/logo.png" alt="logo SpecialWeb">
+        </div>
+
+        <nav class="nav" role="navigation" aria-label="روابط الموقع">
+          <a href="index.html">الرئيسية</a>
+          <a href="services.html">خدماتنا</a>
+          <a href="works.html">معرض الأعمال</a>
+          <a href="auto.html">من نحن</a>
+          <a href="contactus.html">تواصل معنا</a>
+        </nav>
+        <div class="secation">
+          <a
+            href="https://www.facebook.com/profile.php?id=61577997461904"
+            target="_blank"
+            ><i class="fa-brands fa-facebook" aria-label="موقعنا على فيسبوك"></i
+          ></a>
+          <a href="https://wa.me/201123272272" target="_blank"
+            ><i class="fa-brands fa-whatsapp" aria-label="واتسأب"></i
+          ></a>
+          <a href="https://www.youtube.com/@specialweb-s1g" target="_blank"
+            ><i class="fa-brands fa-youtube" aria-label="يوتيوب"></i
+          ></a>
+          <a href="https://www.instagram.com/specialweb8/" target="_blank">
+            <i class="fa-brands fa-instagram" aria-label="انستغرام"></i>
+          </a>
+          <a href="https://X.com/SpecialWeb73449" target="_blank">
+            <i class="fa-brands fa-x-twitter" aria-label="تويتر"></i>
+          </a>
+        </div>
+        <!-- زر الهامبرغر للموبايل -->
+        <button
+          id="navToggle"
+          class="nav-btn"
+          aria-controls="mobileNav"
+          aria-expanded="false"
+          aria-label="فتح القائمة"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Off-canvas (القائمة الجانبية) -->
+    <aside
+      id="mobileNav"
+      class="offcanvas"
+      role="dialog"
+      aria-hidden="true"
+      aria-label="قائمة التنقل"
+    >
+      <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">خدماتنا</a>
+        <a href="works.html">معرض الأعمال</a>
+        <a href="auto.html">من نحن</a>
+        <a href="contactus.html">تواصل معنا</a>
+
+        <div class="secation">
+          <a
+            href="https://www.facebook.com/profile.php?id=61577997461904"
+            target="_blank"
+            ><i class="fa-brands fa-facebook" aria-label="موقعنا على فيسبوك"></i
+          ></a>
+          <a href="https://wa.me/201123272272" target="_blank"
+            ><i class="fa-brands fa-whatsapp" aria-label="واتسأب"></i
+          ></a>
+          <a href="https://www.youtube.com/@specialweb-s1g" target="_blank"
+            ><i class="fa-brands fa-youtube" aria-label="يوتيوب"></i
+          ></a>
+          <a href="https://www.instagram.com/specialweb8/" target="_blank">
+            <i class="fa-brands fa-instagram" aria-label="انستغرام"></i>
+          </a>
+          <a href="https://X.com/SpecialWeb73449" target="_blank">
+            <i class="fa-brands fa-x-twitter" aria-label="تويتر"></i>
+          </a>
+        </div>
+      </nav>
+    </aside>
+    <!-- Overlay للخلفية -->
+    <div id="overlay" class="overlay" aria-hidden="true"></div>
+<!-------------------------- start works ------------------ -->
+
+
+<main class="gallery" id="gallery" aria-labelledby="gallery-title">
+  <div class="container">
+    <h1 id="gallery-title" class="page-title">معرض أعمالنا</h1>
+
+    <!-- PROJECT 1 -->
+    <article class="project" data-video-id="0lM7IfSafLM">
+      <div class="project-media">
+        <div class="media-inner" data-video-loaded="false">
+          <img class="thumb" src="images/logo-01-webp.webp" alt="معاينة فيديو المشروع 1" loading="lazy">
+          <button class="play-btn" type="button" aria-label="تشغيل فيديو المشروع 1" data-video-id="0lM7IfSafLM">
+            <span class="play-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h2 class="proj-title">⚖ صفحة تعريفية لمكتب محامي</h2>
+        <p class="proj-desc">موقع احترافي يعرّف بالمحامي محمد عثمان وخدماته القانونية، يعرض السيرة، مجالات الخبرة، وطرق التواصل بشكل واضح وسهل للزوار والموكلين المحتملين.</p>
+        <div class="proj-cta">
+          <a class="btn btn-outline" href="https://youtu.be/0lM7IfSafLM" target="_blank" rel="noopener">مشاهدة على يوتيوب</a>
+          <a class="btn btn-primary" href="http://mohamedothman.com" target="_blank" rel="noopener">زيارة المشروع</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 2 -->
+    <article class="project" data-video-id="pGp7MyeviSc">
+      <div class="project-media">
+        <div class="media-inner" data-video-loaded="false">
+          <img class="thumb" src="images/logo-blueTeck-webp.webp" alt="معاينة فيديو المشروع 2" loading="lazy">
+          <button class="play-btn" type="button" aria-label="تشغيل فيديو المشروع 2" data-video-id="pGp7MyeviSc">
+            <span class="play-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h2 class="proj-title">💻 مشروع تدريبي BlueTech</h2>
+        <p class="proj-desc">مشروع تدريبي بعنوان BlueTech يركز على واجهة مستخدم حديثة تعرض منتجات وخدمات افتراضية، مع تصميم متجاوب وتجربة مستخدم بسيطة وسلسة.</p>
+        <div class="proj-cta">
+          <a class="btn btn-outline" href="https://youtu.be/pGp7MyeviSc&t=9s" target="_blank" rel="noopener">مشاهدة على يوتيوب</a>
+          <a class="btn btn-primary" href="https://ahmedob2025.github.io/BlueTech/" target="_blank" rel="noopener">زيارة المشروع</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 3 -->
+    <article class="project" data-video-id="VIDEO_ID_3">
+      <div class="project-media">
+        <div class="media-inner" data-video-loaded="false">
+          <img class="thumb" src="images/logoSpecialWep.webp" alt="معاينة فيديو المشروع 3" loading="lazy">
+          <button class="play-btn" type="button" aria-label="تشغيل فيديو المشروع 3" data-video-id="VIDEO_ID_3">
+            <span class="play-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h2 class="proj-title">SpecualWeb — النسخة التجريبية</h2>
+        <p class="proj-desc">مشروع تجريبي لتجسيد أفكار تصميم مرن وسهل التخصيص للشركات الصغيرة والمستقلين.</p>
+        <div class="proj-cta">
+          <a class="btn btn-outline" href="https://youtu.be/VIDEO_ID_3" target="_blank" rel="noopener">مشاهدة على يوتيوب</a>
+          <a class="btn btn-primary" href="https://ahmedob2025.github.io/specialWep-company-site/" target="_blank" rel="noopener">زيارة المشروع</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 4 -->
+    <article class="project" data-video-id="_-pfNQ4qhEw">
+      <div class="project-media">
+        <div class="media-inner" data-video-loaded="false">
+          <img class="thumb" src="images/logo_lujmah-webp.webp" alt="معاينة فيديو المشروع 4" loading="lazy">
+          <button class="play-btn" type="button" aria-label="تشغيل فيديو المشروع 4" data-video-id="_-pfNQ4qhEw">
+            <span class="play-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h2 class="proj-title">🍽 مشروع تدريبي Luqmah</h2>
+        <p class="proj-desc">مشروع تدريبي عملي يعرض صفحة هبوط بسيطة وتسويق رقمي لعلامة تجارية افتراضية بأسم Luqmah، تصميم سهل القراءة مع أقسام للخدمات والاتصال</p>
+        <div class="proj-cta">
+          <a class="btn btn-outline" href="https://youtu.be/_-pfNQ4qhEw" target="_blank" rel="noopener">مشاهدة على يوتيوب</a>
+          <a class="btn btn-primary" href="https://ahmedob2025.github.io/luqmah.com/" target="_blank" rel="noopener">زيارة المشروع</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<script>
+      // gallery.js — lazy-load youtube iframe on click (accessibility friendly)
+document.addEventListener("DOMContentLoaded", function () {
+  const playButtons = document.querySelectorAll(".play-btn");
+
+  function createIframe(videoId) {
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1`;
+    iframe.title = "مشغل فيديو يوتيوب";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.setAttribute("allowfullscreen", "");
+    iframe.className = "video-frame";
+    iframe.loading = "lazy";
+    return iframe;
+  }
+
+  playButtons.forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+      const mediaInner = btn.closest(".media-inner");
+      if (!mediaInner) return;
+      if (mediaInner.getAttribute("data-video-loaded") === "true") return;
+
+      const videoId = btn.getAttribute("data-video-id") || btn.dataset.videoId;
+      if (!videoId) return;
+
+      // استبدال المحتوى بصورة iframe
+      const iframe = createIframe(videoId);
+      mediaInner.innerHTML = "";
+      mediaInner.appendChild(iframe);
+      mediaInner.setAttribute("data-video-loaded", "true");
+
+      // محاولة نقل الفوكس إلى iframe (بعض المتصفحات تسمح)
+      try { iframe.focus(); } catch (err) { /* ignore */ }
+    });
+
+    // دعم تفعيل بالكيبورد (Enter / Space)
+    btn.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        btn.click();
+      }
+    });
+  });
+});</script>
+
+
+
+
+    <footer class="footer footer-compact" aria-label="تذييل الصفحة">
+      <div class="container footer-grid" role="contentinfo">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="/" class="brand-link" aria-label="SpecialWeb — الرئيسية">
+            <!-- استبدل المسار بشعارك أو ارفع ملف logo.svg -->
+            <img
+              src="images/Special_Web.png"
+              alt="شعار SpecialWeb"
+              class="footer-logo"
+            />
+            <span class="brand-name">SpecialWeb</span>
+          </a>
+          <p class="footer-tag">حلول رقمية متكاملة — تصميم، تطوير وتسويق.</p>
+        </div>
+
+        <!-- Quick links -->
+        <nav class="footer-links" aria-label="روابط سريعة">
+          <h4 class="footer-title">روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="works.html">معرض الأعمال</a></li>
+            <li><a href="contactus.html">تواصل معنا</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact & Social -->
+        <div class="footer-contact" aria-label="معلومات الاتصال">
+          <h4 class="footer-title">تواصل معنا</h4>
+
+          <div class="contact-line">
+            <!-- أيقونة هاتف صغيرة (SVG) -->
+            <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 5.5C3 5.2 3.2 5 3.5 5h3c.3 0 .5.2.6.4l1 2c.1.3 0 .6-.2.8l-1.1 1.1c.9 1.8 2.3 3.2 4.1 4.1l1.1-1.1c.2-.2.5-.3.8-.2l2 1c.2.1.4.3.4.6v3c0 .3-.2.5-.5.5H18C9.2 19 5 14.8 5 6V5.5z"
+                fill="currentColor"
+              />
+            </svg>
+            <a href="https://wa.me/201201795928" target="_blank" dir="ltr"
+              >+20 120 179 5928</a
+            >
+          </div>
+
+                    <div class="contact-line">
+            <!-- أيقونة هاتف صغيرة (SVG) -->
+            <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 5.5C3 5.2 3.2 5 3.5 5h3c.3 0 .5.2.6.4l1 2c.1.3 0 .6-.2.8l-1.1 1.1c.9 1.8 2.3 3.2 4.1 4.1l1.1-1.1c.2-.2.5-.3.8-.2l2 1c.2.1.4.3.4.6v3c0 .3-.2.5-.5.5H18C9.2 19 5 14.8 5 6V5.5z"
+                fill="currentColor"
+              />
+            </svg>
+            <a href="https://wa.me/963992812546" target="_blank" dir="ltr"
+              >+963 992 812 546  </a
+            >
+          </div>
+
+
+          <div class="contact-line">
+            <!-- أيقونة إيميل -->
+            <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 6.5v11A2.5 2.5 0 0 0 5.5 20h13a2.5 2.5 0 0 0
+              2.5-2.5v-11A2.5 2.5 0 0 0 18.5 4h-13A2.5 2.5 0 0 0 3 6.5zm2 .5l7
+              4.5 7-4.5V6l-7 4.5L5 6v1z"
+                fill="currentColor"
+              />
+            </svg>
+            <a href="mailto:SpecialWeb8@gmail.com" target="_blank"
+              >SpecialWeb8@gmail.com</a
+            >
+          </div>
+          <div
+            class="footer-social"
+            aria-label="روابط التواصل الاجتماعي"
+            role="navigation"
+          >
+            <a
+              href="https://www.facebook.com/profile.php?id=61577997461904"
+              target="_blank"
+              ><i
+                class="fa-brands fa-facebook"
+                aria-label="موقعنا على فيسبوك"
+              ></i
+            ></a>
+            <a href="https://www.instagram.com/specialweb8/" target="_blank">
+              <i class="fa-brands fa-instagram" aria-label="انستغرام"></i>
+            </a>
+            <a href="https://X.com/SpecialWeb73449" target="_blank">
+              <i class="fa-brands fa-x-twitter" aria-label="تويتر"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="container footer-bottom">
+        <small>© <span id="year"></span> SpecialWeb — جميع الحقوق محفوظة</small>
+      </div>
+    </footer>
+
+
+    <button id="backToTop" class="back-to-top" aria-label="العودة إلى الأعلى" title="العودة إلى الأعلى">
+  <!-- أيقونة سهم -->
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path fill="currentColor" d="M12 4.5l-7 7 1.4 1.4L11 8.3V20h2V8.3l4.6 4.6L19 11.5z"/>
+  </svg>
+</button>
+    <script src="js/script.js"></script>
+  </body>
+</html>
