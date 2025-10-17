@@ -1904,4 +1904,29 @@ option {
 /* لو تحب تخلي الزر على اليمين (لـ LTR) غيّر left->right */
 
 
+/* --- إصلاح تمدد الصفحة في contact --- */
+body.contact-page, 
+#contact, 
+.contact, 
+.page-contact {
+  overflow-x: hidden !important;
+}
+
+header.header,
+.container,
+.footer,
+.footer-grid,
+.footer-bottom,
+.footer-compact {
+  flex-wrap: wrap !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.hero,
+.section {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
 
