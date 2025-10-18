@@ -602,12 +602,14 @@
     box-shadow: 0 8px 30px rgba(0,0,0,0.5);
     border:1px solid rgba(255,255,255,0.03);
     align-items:start;
+    width: 400px;
   }
 
   /* عمودين على الشاشات الكبيرة */
   @media(min-width:900px){
     .contact-form{
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+      width: 700px;
     }
     /* بعض الحقول يجب أن تمتد بعرض كامل */
     .contact-form .full{ grid-column:1 / -1; }
@@ -857,6 +859,7 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+
 
 
 
