@@ -565,11 +565,163 @@
         <small>© <span id="year"></span> SpecialWeb — جميع الحقوق محفوظة</small>
       </div>
     </footer>
+<style>
+  :root{
+    --bg:#0b1220;
+    --card:#071426;
+    --text:#e9f0f7;
+    --muted:#9fb0c2;
+    --accent1:#6d28d9;
+    --accent2:#06b6d4;
+    --radius:12px;
+    --gap:14px;
+    --max-w:1100px;
+  }
 
+  .form-wrap{
+    max-width:var(--max-w);
+    margin:0 auto;
+    padding:20px;
+  }
+
+  .section-title{
+    margin:0 0 12px 0;
+    font-size:20px;
+    color:var(--text);
+    font-weight:800;
+  }
+
+  .contact-form{
+    display:grid;
+    gap:var(--gap);
+    background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border-radius:var(--radius);
+    padding:12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    border:1px solid rgba(255,255,255,0.03);
+    align-items:start;
+    max-width: 350px;
+  }
+
+  /* عمودين على الشاشات الكبيرة */
+  @media(min-width:900px){
+    .contact-form{
+      grid-template-columns: 1fr;
+      width: 700px;
+    }
+    /* بعض الحقول يجب أن تمتد بعرض كامل */
+    .contact-form .full{ grid-column:1 / -1; }
+  }
+
+  .field{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .label-text{
+    font-size:13px;
+    color:var(--muted);
+    display:block;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea,
+  input[type="file"]{
+    background: rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.04);
+    color:var(--text);
+    padding:10px 12px;
+    border-radius:10px;
+    font-size:14px;
+    outline:none;
+    transition: box-shadow .18s ease, border-color .18s ease;
+    direction: ltr; /* السماح بالادخال الطبيعي للارقام والايميلات */
+    width: 300px;
+  }
+
+  /* for RTL text areas/inputs (Arabic) keep text aligned right */
+  textarea, input[type="text"], input[type="tel"]{ direction: rtl; text-align: right; }
+
+  input:focus, textarea:focus, select:focus{
+    box-shadow: 0 8px 20px rgba(3,10,34,0.6);
+    border-color: rgba(255,255,255,0.12);
+  }
+
+  textarea{ min-height:140px; resize:vertical; }
+
+  .form-notice{
+    grid-column:1 / -1;
+    padding:10px 12px;
+    border-radius:8px;
+    background:transparent;
+    color:var(--muted);
+    font-size:14px;
+    min-height:1em;
+  }
+
+  .form-notice.success{ background: linear-gradient(90deg, rgba(6,182,212,0.08), rgba(109,40,217,0.06)); color:#c9fff6; border:1px solid rgba(6,182,212,0.12); }
+  .form-notice.error{ background: linear-gradient(90deg, rgba(217,67,67,0.04), rgba(0,0,0,0.02)); color:#ffd6d6; border:1px solid rgba(217,67,67,0.08); }
+
+  .field-error{
+    color:#ffb4b4;
+    font-size:13px;
+    min-height:1em;
+  }
+
+  .actions{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    grid-column:1 / -1;
+  }
+
+  .btn-primary{
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    color:white;
+    border:0;
+    padding:10px 16px;
+    border-radius:10px;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow: 0 8px 22px rgba(6,11,40,0.6);
+  }
+
+  .btn-primary[disabled]{ opacity:0.7; cursor:wait; }
+
+  .btn-outline{
+    background:transparent;
+    color:var(--muted);
+    border:1px solid rgba(255,255,255,0.04);
+    padding:10px 14px;
+    border-radius:10px;
+    cursor:pointer;
+  }
+
+  .radio-group{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+  .checkbox{ display:flex; align-items:center; gap:8px; }
+
+  .hp{ display:none !important; } /* اخفاء الهوني بوت عن المستخدمين */
+
+  .small.muted{ color:var(--muted); font-size:13px; margin-top:4px; grid-column:1 / -1; }
+
+  /* تحسين الوصول: outline واضح */
+  a:focus, button:focus, input:focus, select:focus, textarea:focus{ outline: 3px solid rgba(109,40,217,0.12); outline-offset:2px; }
+
+  /* responsive tweaks for very small screens */
+  @media(max-width:420px){
+    .form-wrap{ padding:10px;  }
+    .section-title{ font-size:18px; }
+  }
+</style>
     <!-- JS -->
     <script src="js/script.js"></script>
   </body>
 </html>
+
 
 
 
