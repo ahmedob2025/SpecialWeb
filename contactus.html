@@ -208,7 +208,170 @@
         <div class="layout">
           <!-- FORM COLUMN -->
 
+<section class="form-wrap" aria-labelledby="contact-form-title">
+            <h2 id="contact-form-title" class="section-title">أرسل طلبك</h2>
 
+            <!-- طريقة العمل: ضع هنا رابط endpoint الخاص بك في action -->
+            <form
+              id="contactForm"
+              class="contact-form"
+              action="https://formspree.io/f/xovkpwyp"
+              method="POST"
+              enctype="multipart/form-data"
+              novalidate
+              aria-describedby="form-notice"
+            >
+              <!-- Redirect -->
+              <input type="hidden" name="_next" value="thank-you.html" />
+
+              <!-- Subject (يظهر في البريد) -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="طلب جديد من موقع SpecialWeb"
+              />
+
+              <!-- HONEYPOT لمنع الروبوتات -->
+              <label class="hp" aria-hidden="true"
+                >لا تعبئ هذا الحقل
+                <input
+                  name="website"
+                  type="text"
+                  autocomplete="off"
+                  tabindex="-1"
+                />
+              </label>
+
+              <!-- alert region -->
+              <div
+                id="form-notice"
+                class="form-notice"
+                role="status"
+                aria-live="polite"
+              ></div>
+
+              <label class="field">
+                <span class="label-text">الاسم الكامل *</span>
+                <input
+                  name="name"
+                  type="text"
+                  required
+                  placeholder="أدخل اسمك الكامل"
+                  aria-required="true"
+                />
+              </label>
+
+              <label class="field">
+                <span class="label-text">البريد الإلكتروني *</span>
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="name@example.com"
+                  aria-required="true"
+                />
+              </label>
+
+              <label class="field">
+                <span class="label-text">رقم الهاتف *</span>
+                <input
+                  name="phone"
+                  type="tel"
+                  required
+                  placeholder="+963 9X XXX XXXX"
+                  aria-required="true"
+                />
+              </label>
+
+              <label class="field">
+                <span class="label-text">نوع الخدمة *</span>
+                <select name="service" required aria-required="true">
+                  <option value="">اختر الخدمة</option>
+                  <option>تصميم موقع</option>
+                  <option>تسويق إلكتروني</option>
+                  <option>إنتاج فيديو</option>
+                  <option>استشارة ذكاء اصطناعي</option>
+                  <option>أخرى</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span class="label-text">الميزانية (اختياري)</span>
+                <select name="budget">
+                  <option value="">غير محددة</option>
+                  <option>أقل من $500</option>
+                  <option>$500 - $1500</option>
+                  <option>أكثر من $1500</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span class="label-text">وصف المشروع *</span>
+                <textarea
+                  name="message"
+                  rows="6"
+                  required
+                  placeholder="اكتب تفاصيل المشروع، الهدف، والجمهور المستهدف..."
+                  aria-required="true"
+                ></textarea>
+              </label>
+
+              <label class="field">
+                <span class="label-text">إرفاق ملف (اختياري — حتى 5MB)</span>
+                <input
+                  name="attachment"
+                  type="file"
+                  accept=".png,.jpg,.jpeg,.pdf,.zip"
+                />
+              </label>
+
+              <fieldset
+                class="field radio-group"
+                aria-label="قناة الرد المفضلة"
+              >
+                <legend class="label-text">أريد الرد عبر:</legend>
+                <label
+                  ><input type="radio" name="reply_via" value="email" checked />
+                  البريد الإلكتروني</label
+                >
+                <label
+                  ><input type="radio" name="reply_via" value="whatsapp" />
+                  واتساب</label
+                >
+                <label
+                  ><input type="radio" name="reply_via" value="phone" /> مكالمة
+                  هاتفية</label
+                >
+              </fieldset>
+
+              <label class="field checkbox">
+                <input
+                  name="consent"
+                  type="checkbox"
+                  required
+                  aria-required="true"
+                />
+                <span
+                  >أوافق على
+                  <a href="/privacy.html" target="_blank" rel="noopener"
+                    >سياسة الخصوصية</a
+                  ></span
+                >
+              </label>
+
+              <div class="actions">
+                <button type="submit" class="btn-primary">إرسال الطلب</button>
+                <button type="button" class="btn-outline" id="resetBtn">
+                  مسح النموذج
+                </button>
+              </div>
+
+              <p class="small muted">
+                بإرسال هذا النموذج أنت توافق على أن نحفظ بياناتك للتواصل
+                والمتابعة.
+              </p>
+            </form>
+          </section>
           <!-- INFO COLUMN -->
           <aside class="info-wrap" aria-labelledby="contact-info-title">
             <h2 id="contact-info-title" class="section-title">
