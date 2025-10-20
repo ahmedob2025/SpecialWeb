@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://ahmedob2025.github.io/SpecialWeb/index.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- خدمات الشركة -->
+  <url>
+    <loc>https://ahmedob2025.github.io/SpecialWeb/services.html</loc>
+    <lastmod>2025-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- معرض الأعمال / مشاريع -->
+  <url>
+    <loc>https://ahmedob2025.github.io/SpecialWeb/works.html</loc>
+    <lastmod>2025-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- صفحة تواصل -->
+  <url>
+    <loc>https://ahmedob2025.github.io/SpecialWeb/contactus.html</loc>
+    <lastmod>2025-10-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- مثال على إضافة صورة مرفقة بصفحة (يساعد Google بفهرسة الصور) -->
+  <url>
+    <loc>https://specialweb.com/portfolio/project-1</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://specialweb.com/assets/images/project-1-cover.jpg</image:loc>
+      <image:caption>تصميم موقع SpecialWeb - Project 1</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
